@@ -1,0 +1,128 @@
+#Payment {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fc;
+}
+
+.validity-check {
+  color: red;
+  font-size: 13px;
+}
+
+.paymentProcess {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+  height: 100%;
+  color: #8492a6;
+}
+.card-input {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b3b8be;
+}
+
+.payment-card {
+  padding: 0 20px;
+}
+
+.card-details > input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #b3b8be;
+}
+
+.card-details > label {
+  display: block;
+  color: #8492a6;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+li {
+  color: #8492a6;
+}
+
+.expiry > input {
+  width: 20%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #b3b8be;
+  margin-right: 10px;
+}
+
+.payment-order {
+  width: 50%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cvc {
+  width: 20% !important;
+}
+
+.card-number {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+
+.card-number > input {
+  width: 20%;
+  margin: 0px 5px 0 0;
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid #8cb369;
+  text-align: center;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mathRandom {
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 5px 15px;
+  color: black;
+  border: 1px solid #b3b8be;
+  border-radius: 5px;
+}
+
+.invalid input {
+  border: 2px solid red;
+}
+
+@media screen and (max-width: 1200px) {
+  .payment-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paymentProcess {
+    flex-direction: column;
+  }
+  .payment-card {
+    width: 80%;
+  }
+  .payment-order {
+    margin-top: 20px;
+    width: 80%;
+  }
+  .card-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

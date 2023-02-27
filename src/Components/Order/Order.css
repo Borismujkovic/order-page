@@ -1,0 +1,23 @@
+.header,
+.agreement {
+  border: 1px solid #eceef1;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin: 0px auto 20px auto;
+  width: 40%;
+  border: 1px solid #d6dae0;
+}
+
+.header {
+  width: 60% !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .header,
+  .agreement {
+    width: 60%;
+  }
+  .header {
+    width: 80% !important;
+  }
+}

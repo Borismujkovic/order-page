@@ -1,0 +1,92 @@
+#Agreement {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(225, 40%, 98%);
+}
+.agreement-header {
+  border: 1px solid #eceef1;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin: 0px auto 20px auto;
+  width: 60%;
+  border: 1px solid #d6dae0;
+}
+
+.download,
+.terms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-button {
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #7b9e5c;
+}
+
+.agreementButton {
+  background-color: #8cb36928;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  cursor: not-allowed;
+}
+
+.a-link {
+  pointer-events: none;
+  cursor: default;
+}
+
+.agreementButton:hover {
+  background-color: #8cb36928;
+}
+
+@media screen and (max-width: 512px) {
+  .agreementButton {
+    padding: 5px 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .download,
+  .terms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .download,
+  .terms {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .agreement-check {
+    margin-top: 20px;
+  }
+}

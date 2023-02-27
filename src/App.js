@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom'
 
-function App() {
+import "./App.css";
+import { Order } from "./Components/Order/Order";
+import { Agreement } from "./Components/Agreement/Agreement";
+import { Payment } from "./Components/Payment/Payment";
+import { CompletedOrder } from "./Components/CompletedOrder/CompletedOrder";
+
+import { useState } from "react";
+import { CartProvider } from "./store/cartProvider";
+
+export const App = () => {
+  const [ordered, setOrdered] = useState(null);
+
+  const orderHandler = (data) => {
+    setOrdered(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <Switch>
+      <div id="App">
+        <Route exact path='/'>
+        <Order />
+        </Route>
+        <Route path='/order/agreement'>
+        <Agreement />
+        </Route>
+        <Route path='/order/payment'>
+        <Payment />
+        </Route>
+        <Route path='/order/orderCompleted'>
+        <CompletedOrder />
+        </Route>
+      </div>
+      </Switch>
+    </CartProvider>
   );
-}
+};
 
-export default App;

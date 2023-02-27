@@ -1,0 +1,47 @@
+#completedOrder {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fc;
+}
+
+.complete {
+  border: 1px solid #d6dae0;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.orderContent {
+  padding: 10px;
+}
+
+.finalButtons {
+  display: flex;
+  justify-content: end;
+}
+
+.backButton {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .complete {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .complete {
+    width: 70%;
+  }
+  .finalButtons button {
+    width: 40%;
+    height: 20%;
+  }
+}

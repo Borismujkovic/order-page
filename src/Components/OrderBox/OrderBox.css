@@ -1,0 +1,32 @@
+.order-box {
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid #d6dae0;
+  box-shadow: 0px 1px 15px -8px rgba(0, 0, 0, 0.75);
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.details-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 860px) {
+  .logo {
+    display: none;
+  }
+}
