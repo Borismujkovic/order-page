@@ -170,7 +170,7 @@ export const OrderForm = (props) => {
           />
         </div>
         <div className="formSelect">
-          <label htmlFor="radio">FSE:</label>
+          <label htmlFor="radio">FSE (+10%):</label>
           <div
             onChange={(event) => {
               setFSE(event.target.value);
@@ -195,7 +195,7 @@ export const OrderForm = (props) => {
           </div>
         </div>
         <div className="formSelect">
-          <label htmlFor="radio">Carbon C:</label>
+          <label htmlFor="radio">Carbon C (+5%):</label>
           <div
             onChange={(event) => {
               setCarbon(event.target.value);
@@ -232,13 +232,13 @@ export const OrderForm = (props) => {
             >
               <option value="-">-</option>
               <option value="Sumadija">Sumadija</option>
-              <option value="Jug">Jug</option>
-              <option value="Vojvodina">Vojvodina</option>
+              <option value="Jug">Jug (-17%)</option>
+              <option value="Vojvodina">Vojvodina (+9%)</option>
             </select>
           </span>
         </div>
         <div className="formSelect">
-          <label htmlFor="radio">Satellite:</label>
+          <label htmlFor="radio">Satellite (+1%):</label>
           <div
             onChange={(event) => {
               setSatellite(event.target.value);
